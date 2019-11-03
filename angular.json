@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "artslabActions": {
+    "artslabDemo": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/artslabActions",
+            "outputPath": "dist/artslabDemo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "artslabActions:build"
+            "browserTarget": "artslabDemo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "artslabActions:build:production"
+              "browserTarget": "artslabDemo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "artslabActions:build"
+            "browserTarget": "artslabDemo:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "artslabActions:serve"
+            "devServerTarget": "artslabDemo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "artslabActions:serve:production"
+              "devServerTarget": "artslabDemo:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "artslabActions"
+  "defaultProject": "artslabDemo"
 }
